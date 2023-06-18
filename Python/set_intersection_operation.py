@@ -1,0 +1,7 @@
+n = int(input())
+roll_numbers_n = set(input().split())
+b = int(input())
+roll_numbers_b = set(input().split())
+subscription_to_both = roll_numbers_n.intersection(roll_numbers_b)
+Total_students = len(subscription_to_both)
+print(Total_students)
