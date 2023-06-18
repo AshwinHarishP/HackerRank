@@ -1,0 +1,7 @@
+english_tot = int(input())
+english_roll = set(input().split())
+french_tot = int(input())
+french_roll = set(input().split())
+not_both = english_roll.symmetric_difference(french_roll)
+Total_students = len(not_both)
+print(Total_students)
