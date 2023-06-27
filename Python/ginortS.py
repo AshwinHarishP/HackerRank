@@ -1,0 +1,6 @@
+s=input()
+lower = ''.join(sorted([i for i in s if i.islower() ]))
+upper = ''.join(sorted([i for i in s if i.isupper() ]))
+even_digit = ''.join(sorted([i for i in s if i.isdigit() and int(i)%2==0 ]))
+odd_digit = ''.join(sorted([i for i in s if i.isdigit() and int(i)%2!=0 ]))
+print(lower+upper+odd_digit+even_digit)
